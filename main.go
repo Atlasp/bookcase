@@ -1,10 +1,11 @@
 package main
 
 import (
+	"log"
 	"net/http"
 
-	"github.com/Atlasp/bookcase/internal/core/adapters"
-	"github.com/Atlasp/bookcase/internal/core/domain/book"
+	"github.com/Atlasp/bookcase/internal/adapters"
+	"github.com/Atlasp/bookcase/internal/core/book"
 	"github.com/Atlasp/bookcase/internal/server"
 )
 
@@ -14,5 +15,5 @@ func main() {
 
 	r := server.New(service)
 
-	http.ListenAndServe("localhost:8080", r.Router)
+	log.Fatal(http.ListenAndServe("localhost:8080", r.Router))
 }

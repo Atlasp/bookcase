@@ -1,6 +1,8 @@
 package adapters
 
-import "github.com/Atlasp/bookcase/internal/core/domain/book"
+import (
+	"github.com/Atlasp/bookcase/internal/core/book"
+)
 
 type Memory struct {
 	memMap map[int]book.Book

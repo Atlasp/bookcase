@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/Atlasp/bookcase/internal/core/domain/book"
+	"github.com/Atlasp/bookcase/internal/core/book"
 	"github.com/pingcap/log"
 )
 

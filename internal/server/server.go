@@ -1,7 +1,7 @@
 package server
 
 import (
-	"github.com/Atlasp/bookcase/internal/core/domain/book"
+	"github.com/Atlasp/bookcase/internal/core/book"
 	"github.com/go-chi/chi/v5"
 )
 
